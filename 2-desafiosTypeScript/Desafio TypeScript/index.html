@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <script src="./dist/js/index.js" defer></script>
+        <link rel="stylesheet" href="./dist/assets/CSS/style.css">
+        <title>Teorema de Pitágoras</title>
+    </head>
+    <body>
+        <div class="globalDiv">
+            <div class="header">
+                <img class="labelImage" id="idHeader" src="./dist/assets/images/header2.jpg" alt="Operações">
+            </div>
+            <div class="legendDiv">
+                <h1 class="legend">Calculadora Triângulo - Teorema de Pitágoras</h1>
+            </div>
+            <form action="">
+                <div class="globalForm">
+                    <div class="firstColumn">
+                        <div class="valueInformation">
+                            <div class="divSide">
+                                <label class="labelInput" for="idCatetoA">Cateto A</label>
+                                <input class="input" type="number" name="nmCatetoA" id="idCatetoA" step="0.1">
+                            </div>
+                            <div class="divSide">
+                                <label class="labelInput" for="idCatetoB">Catero B</label>
+                                <input class="input" type="number" name="nmCatetoB" id="idCatetoB" step="0.1">
+                            </div>
+                            <div class="divHypotenuse">
+                                <label class="labelInput" for="idHipotenusa">Hipotenusa</label>
+                                <input class="inputHypotenuse" type="number" name="nmHipotenusa" id="idHipotenusa"
+                                    step="0.1">
+                            </div>
+                        </div>
+                        <div class="divBtn">
+                            <input class="button btn" type="button" id="idBtnCalcular" name="nmBtnCalcular"
+                                value="Calcular">
+                            <input class="button btn" type="button" id="idBtnLimpar" name="nmBtnLimpar" value="Limpar">
+                        </div>
+                    </div>
+                    <div class="secondColumn">
+                        <div class="images" id="idDivImages">
+                            <img class="triangleImage" id="idTriangle1" src="./dist/assets/images/triangle1.png"
+                                alt="Foto do Triângulo Retângulo">
+                            <img class="triangleImage" id="idTriangle2" src="./dist/assets/images/triangle2.png"
+                                alt="Foto do Triângulo Retângulo" hidden>
+                            <img class="triangleImage" id="idTriangle3" src="./dist/assets/images/triangle3.png"
+                                alt="Foto do Triângulo Retângulo" hidden>
+                        </div>
+                        <div class="divImageError" id="idDivImageError" hidden>
+                            <img class="errorGif" id="idErrorGif" src="./dist/assets/gifs/error.gif" alt="Foto de um erro">
+                        </div>
+                    </div>
+                    <div class="thirdColumn" id="idDivGeneral">
+                        <div class="divResult" id="idDivResult" hidden>
+                            <h3 class="resultLegend">Resultado: </h3>
+                            <div class="divOutput">
+                                <output class="output" id="idOut1"></output>
+                            </div>
+                            <div class="divOutput">
+                                <output class="output" id="idOut2"></output>
+                            </div>
+                            <div class="divOutput">
+                                <output class="output" id="idOut3"></output>
+                            </div>
+                            <div class="divOutput">
+                                <output class="output" id="idOut4"></output>
+                            </div>
+                            <div class="divOutput">
+                                <output class="output" id="idOut5"></output>
+                            </div>
+                            <div class="divOutput">
+                                <output class="output" id="idOut6"></output>
+                            </div>
+                            <div class="divOutput">
+                                <output class="output" id="idOut7"></output>
+                            </div>
+                        </div>
+                        <div class="divOutputError" id="idDivOutputError" hidden>
+                            <h3 class="resultLegend">Resultado: </h3>
+                            <div class="divOutput">
+                                <output class="outputError" id="idOutError"></output>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </form>
+        </div>
+    </body>
+</html>

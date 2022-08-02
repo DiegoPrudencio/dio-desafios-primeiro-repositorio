@@ -1,0 +1,208 @@
+*{ 
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    font-family: sans-serif;
+    font-size: 14px;    
+    background-color: #F2B077;  
+}
+
+body {
+    text-align: center;
+}
+
+.globalDiv {
+    display: block;
+}
+
+.globalForm {
+    display: flex;
+}
+
+.header {
+    background-image: url(../images/header2.jpg);
+    background-repeat: repeat;
+    height: 150px;
+}
+
+.labelImage {
+    height: 150px;
+}
+
+.legendDiv {
+    align-items: center;
+    background-color: #04BFBF;
+    height: 70px;
+}
+
+.legend {
+    font-size: 30px;
+    background-color: #04BFBF;
+    padding: 20px;
+    color: rgb(0, 0, 0); text-shadow: #492C73 0.1em 0.1em 0.2em
+
+}
+
+.triangleImage, .errorGif {
+    margin: 20px;
+    width: 350px;
+    align-items: center;
+    border: 3px solid #BF266E;
+    border-radius: 8px;
+}
+
+.divImageError #idErrorGif {
+    width: 200px;
+    border: 10px ridge #04BFBF;
+}
+
+.firstColumn {
+    width: 35%;
+    margin-top: 40px;
+} 
+
+.secondColumn {
+    width: 30%;
+    margin-top: 40px;
+} 
+
+.thirdColumn {
+    width: 35%;
+    margin-top: 60px;
+}
+
+.valueInformation {
+    display: block;
+    margin-top: 70px;
+}
+
+.divSide, .divHypotenuse {
+    margin: 20px 30px 20px 50px;
+    text-align: left;
+}
+
+.labelInput {
+    font-size: 20px;
+    margin: 20px 30px 20px 50px;
+}
+
+.input {
+    border: 2px solid #BF266E;
+    border-radius: 8px;
+    margin-left: 25px;
+    padding: 2px;
+}
+
+.inputHypotenuse {
+    border: 2px solid #BF266E;
+    border-radius: 8px;
+    margin-left: 4px;
+    padding: 2px;
+}
+
+.btn {
+    margin-top: 30px;
+    margin-bottom: 20px;
+    border: none;
+    color: rgb(255, 255, 255);
+    background-color: rgb(0, 0, 0);
+    padding: 7px 24px;
+    border-radius: 12px;
+    font-size: 16px;
+    margin-left: 15px;
+
+}
+
+.button {
+    border: none;
+    color: #492C73;
+    background-color: #F24B4B;
+    padding: 15px 32px;
+    border-radius: 12px;
+    border: solid 2px #BF266E;
+    font-size: 16px;
+    margin-left: 15px;
+    margin-bottom: 30px;    
+}
+
+.button:hover {
+    box-shadow: 0 12px 16px 0 #04BFBF, 0 17px 50px 0 #492C73;
+} 
+
+.resultLegend {
+    font-size: 20px;
+    text-align: start;
+    margin-left: 20px;
+}
+
+.divOutput {
+    margin: 15px;
+    text-align: start;
+    border-radius: 8px;
+    border: solid 2px #BF266E;
+    padding: 10px;
+    align-items: center;
+}
+
+.output, .outputError {
+    margin-top: 100px;
+    margin-left: 15px;
+    width: 100%;
+    align-items: center;
+    
+}
+
+@media (max-width: 1024px) {
+
+    .globalDiv {
+        display: block;
+        text-align: center;
+    }
+
+    .globalForm {
+        display: block;
+    }
+
+    .firstColumn .secondColumn, .thirdColumn {
+        width: 100%;
+        
+    }
+
+    .valueInformation, .divSide, .divHypotenuse{
+        align-items: flex-start;
+        margin: 20px;
+    }
+
+    .inputHypotenuse {
+        margin-left: 25px;
+        padding: 2px;
+    }
+} 
+
+@media (max-width: 650px) {
+
+    .globalDiv {
+        display: block;
+        text-align: center;
+    }
+
+    .globalForm {
+        display: block;
+    }
+
+    .firstColumn .secondColumn, .thirdColumn {
+        width: 100%;
+        
+    }
+
+    .valueInformation, .divSide, .divHypotenuse{
+        align-items: flex-start;
+        margin: 20px;
+    }
+
+    .inputHypotenuse {
+        margin-left: 25px;
+        padding: 2px;
+    }
+}
